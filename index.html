@@ -47,16 +47,7 @@
 
 	<script>
 		$(function () {
-			$('.link-widget').on('click', 'a', function (e) {
-				e.preventDefault();
 
-				$.ajax({
-					url: $(this).attr('href'),
-					type: 'GET'
-				}).then(function (res) {
-					alert(res.resourceName.toUpperCase() + ": " + res.resourceDescription);
-				});
-			});
 		});
 	</script>
 </body>
