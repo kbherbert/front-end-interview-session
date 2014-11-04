@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Work Session</title>
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<section class="text-widget">
+					<h1 class="heading">Widget heading</h1>
+					<p>See for more good stuff. Oh, yeah, the guy in the the $4,000 suit is holding the elevator for a guy who doesn't make that in three months. Come on! Mom always taught us to curl up in a ball and remain motionless when confronted. What's gotten into you? Have you been eating cheese?</p>
+					<a href="#">Learn more</a>
+				</section>
+			</div>
+
+			<div class="offset-by-one eleven columns">
+				<section class="link-widget">
+					<h2 class="heading">Related links</h2>
+					<div class="row">
+						<ul class="link-list">
+							<li><a href="/resources/links/1">Google</a></li>
+							<li><a href="/resources/links/2">Apple</a></li>
+							<li><a href="/resources/links/3">Microsoft</a></li>
+							<li><a href="/resources/links/4">Facebook</a></li>
+						</ul>
+
+						<ul class="link-list">
+							<li><a href="/resources/links/5">Twitter</a></li>
+							<li><a href="/resources/links/6">Yahoo</a></li>
+							<li><a href="/resources/links/7">Amazon</a></li>
+							<li><a href="/resources/links/8">Oracle</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mockjax.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
+
+	<script>
+		$(function () {
+			$('.link-widget').on('click', 'a', function (e) {
+				e.preventDefault();
+
+				$.ajax({
+					url: $(this).attr('href'),
+					type: 'GET'
+				}).then(function (res) {
+					alert(res.resourceName.toUpperCase() + ": " + res.resourceDescription);
+				});
+			});
+		});
+	</script>
+</body>
+</html>

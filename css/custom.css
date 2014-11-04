@@ -1,0 +1,45 @@
+.text-widget .heading {
+	color: #5c9a1b;
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.link-widget {
+	border: 1px solid #d7d7d7;
+	border-radius: 15px 0 15px 15px;
+	background: #ccc;
+	background: linear-gradient(#ffffff, #cccccc);
+	clear: both;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+
+.link-widget .heading {
+	margin: 0;
+	background: #5c9a1b;
+	color: #fff;
+	border-radius: 15px 0 0 0;
+	padding: 5px 10px;
+}
+
+.link-widget .link-list {
+	list-style: none;
+	width: 100px;
+	float: left;
+}
+
+.link-widget .link-list li {
+	margin-bottom: 5px;
+}
+
+.link-widget .link-list a {
+	color: #aa005f;
+	border-bottom: 1px dotted #aa005f;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.link-widget .link-list a:hover {
+	border-bottom-style: solid;
+}
