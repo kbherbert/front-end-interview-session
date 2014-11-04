@@ -5,6 +5,18 @@
 	margin: 0;
 }
 
+.primary-cta {
+	background: #1d5b2d;
+	border-radius: 10px;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 18px;
+}
+
+.primary-cta:hover {
+	background: #103e1b;
+}
+
 .link-widget {
 	border: 1px solid #d7d7d7;
 	border-radius: 15px 0 15px 15px;
@@ -42,4 +54,54 @@
 
 .link-widget .link-list a:hover {
 	border-bottom-style: solid;
+}
+
+/* ========================================================
+    MEDIUM GLASS | Grid (24 column, 10px gutter)
+=========================================================== */
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	.container {
+		width: 724px;
+	}
+
+	.row .eleven.columns      { width: 320px; }
+	.row .twelve.columns      { width: 350px; }
+
+	.row .offset-by-one       { margin-left: 30px; }
+}
+
+/* ========================================================
+    SMALL GLASS | Grid (24 column, 10px gutter)
+=========================================================== */
+
+@media only screen and (max-width: 767px) {
+
+	.container {
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.column,
+	.columns {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.row .columns {
+		width: 100% !important;
+	}
+
+	.row .offset-by-one        { margin-left: 0; }
+}
+
+/* ========================================================
+    SMALL and MEDIUM GLASS
+=========================================================== */
+
+@media only screen and (max-width: 979px) {
+
+	.link-widget .link-list { float: none; }
 }
