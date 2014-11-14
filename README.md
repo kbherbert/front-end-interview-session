@@ -3,7 +3,7 @@
 
 ----------------
 
-In this live programming example, the interviewee will be asked to complete the following, given the markup and CSS in this directory.
+### In this live programming example, the interviewee will be asked to complete the following, given the markup and CSS in this directory.
 
 1.	The call to action in the text widget needs some visual improvements. Update it with the following UX requirements:
 	*	The "Learn more" call-to-action should be styled like a button:
